@@ -1,0 +1,922 @@
+/* Button Css Start */
+.btn {
+  --bs-btn-padding-x: calc(var(--space-lg) * 2);
+  --bs-btn-padding-y: var(--space-lg);
+  --bs-btn-font-family: var(--font-primary);
+  --bs-btn-font-size: var(--text-lg);
+  --bs-btn-font-weight: 500;
+  --bs-btn-line-height: 1.21;
+  --bs-btn-disabled-opacity: 0.65;
+  --bs-btn-focus-box-shadow: none;
+  --bs-btn-border-radius: 0;
+  --bs-btn-border-width: 2px;
+  display: flex;
+  width: max-content;
+  align-items: center;
+  justify-content: flex-start;
+  text-transform: capitalize;
+  transition: var(--transition-linear);
+  z-index: 1;
+  min-height: 6.4rem;
+  position: relative;
+  overflow: hidden;
+  --bs-btn-bg: unset;
+  --bs-btn-hover-bg: unset;
+  --bs-btn-active-bg: unset;
+  background-image: var(--bs-btn-bg-img);
+  background-size: 300% 100%;
+  align-items: center;
+  justify-content: center;
+  --bs-btn-active-border-color: var(--bs-btn-hover-border-color);
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg-img: linear-gradient(
+    to right,
+    #ff8d5c 0%,
+    #ff5208 40%,
+    #ff5208 100%
+  );
+  --bs-btn-border-color: var(--clr-button);
+  --bs-btn-bg-image: ;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-border-color: unset;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: unset;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: unset;
+  --bs-btn-disabled-border-color: unset;
+  background-size: 300% 100%;
+}
+
+.btn:hover {
+  background-position: 100% 0;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: var(--clr-orange);
+  --bs-btn-bg-img: linear-gradient(
+    to right,
+    #ffffff00 0%,
+    #ffffff00 50%,
+    #ffffff00 50%,
+    #ff8d5c 0%,
+    #ff5208 100%
+  );
+  --bs-btn-border-color: var(--clr-orange);
+  --bs-btn-hover-color: var(--clr-white);
+  --bs-btn-hover-bg: var(--orange-gradient);
+  --bs-btn-hover-border-color: transparent;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: unset;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: unset;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: unset;
+}
+
+.btn:active {
+  scale: 0.95;
+}
+
+.btn:active,
+.btn-outline-primary:hover {
+  background-position: 80% 0;
+}
+
+/* Button Css End */
+
+/* Breadcrumb CSS Strat */
+.breadcrumb {
+  --bs-breadcrumb-divider: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.42505 16.5999L12.8584 11.1666C13.5 10.5249 13.5 9.4749 12.8584 8.83324L7.42505 3.3999' stroke='%23807E7D' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  --bs-breadcrumb-margin-bottom: 0;
+  --bs-breadcrumb-item-padding-x: 4px;
+  --bs-breadcrumb-item-active-color: var(--clr-orange);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  line-height: 0;
+}
+
+.breadcrumb li,
+.breadcrumb li a {
+  font-size: var(--text-s);
+  font-weight: 500;
+  line-height: 1.088;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+}
+
+.breadcrumb a {
+  color: var(--clr-text-gray);
+}
+
+/* Breadcrumb CSS End */
+
+/* Accrodion CSS Start */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 3rem;
+  --bs-accordion-border-width: 2px;
+  --bs-accordion-btn-color: var(--clr-text-black);
+  --bs-accordion-btn-padding-x: var(--space-2xl);
+  --bs-accordion-btn-padding-y: var(--space-2xl);
+  --bs-accordion-btn-icon: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 4.66699V23.3337' stroke='%230B1414' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M4.66602 14H23.3327' stroke='%230B1414' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  --bs-accordion-btn-active-icon: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M22.1673 5.83301L5.83398 22.1663M5.83398 5.83301L22.1673 22.1663' stroke='white' stroke-width='1.75' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  --bs-accordion-btn-icon-width: calc(var(--space-2xl) + 4px);
+  --bs-accordion-active-bg: var(--clr-orange);
+  --bs-accordion-active-color: var(--clr-white);
+  --bs-accordion-inner-border-radius: 0;
+  --bs-accordion-border-radius: 0;
+  --bs-accordion-body-padding-y: var(--space-xl);
+  --bs-accordion-body-padding-x: var(--bs-accordion-btn-padding-x);
+  font-weight: 500;
+}
+
+.accordion-item:not(:first-of-type):focus-within,
+.accordion-item:focus-within {
+  border-color: var(--clr-orange);
+}
+
+.accordion-collapse {
+  background-color: var(--bs-accordion-active-bg);
+  color: var(--bs-accordion-active-color);
+}
+
+.accordion-button:not(.collapsed) {
+  box-shadow: none;
+}
+
+.accordion-button {
+  font-size: var(--text-lg);
+  font-weight: 500;
+}
+
+.accordion-item:not(:first-of-type) {
+  border-top: var(--bs-accordion-border-width) solid
+    var(--bs-accordion-border-color);
+}
+
+.accordion-body {
+  padding-top: 0;
+}
+
+.accordion-collapse p {
+  border-top: var(--bs-accordion-border-width) solid rgba(255, 255, 255, 30%);
+  padding-top: var(--space-xl);
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+/* Accrodion CSS End */
+
+/* CheckBox CSS Start */
+.form-check {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-left: 0;
+  margin-bottom: 0;
+  min-height: unset;
+}
+
+.form-check-input {
+  border-color: var(--clr-text-gray);
+  border-width: 2px;
+  width: 24px;
+  height: 24px;
+  margin-top: unset;
+  vertical-align: unset;
+  flex: 0 0 auto;
+}
+
+.form-check-label {
+  line-height: 1;
+}
+
+.form-check .form-check-input {
+  float: none;
+  margin-left: 0;
+}
+
+.form-check-input:checked[type="checkbox"] {
+  background-size: 11px;
+  transition: var(--transition-linear);
+  --bs-form-check-bg-image: url("data:image/svg+xml,%3Csvg width='11' height='8' viewBox='0 0 11 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10.8711 0.75908L3.83137 7.86966C3.79051 7.91098 3.74199 7.94376 3.68857 7.96612C3.63516 7.98849 3.57791 8 3.52009 8C3.46227 8 3.40501 7.98849 3.3516 7.96612C3.29819 7.94376 3.24966 7.91098 3.2088 7.86966L0.128939 4.75878C0.0463807 4.67539 0 4.56229 0 4.44436C0 4.32643 0.0463807 4.21333 0.128939 4.12994C0.211497 4.04655 0.32347 3.9997 0.440225 3.9997C0.55698 3.9997 0.668953 4.04655 0.751511 4.12994L3.52009 6.92695L10.2485 0.130237C10.331 0.0468476 10.443 -8.78652e-10 10.5598 0C10.6765 8.78653e-10 10.7885 0.0468476 10.8711 0.130237C10.9536 0.213627 11 0.326728 11 0.444658C11 0.562589 10.9536 0.67569 10.8711 0.75908Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+
+.form-check-input:hover {
+  border-color: var(--clr-orange);
+}
+
+.form-check-input:checked {
+  background-color: var(--clr-orange);
+  border-color: var(--clr-orange);
+}
+
+.form-check-input:focus {
+  border-color: var(--clr-orange);
+}
+
+/* CheckBox CSS End */
+
+/* Radio Button CSS Start */
+.btn-checkbox {
+  border: 1px solid var(--clr-white);
+  box-shadow: 0px 4px 76px 0px rgba(var(--clr-rgb-black), 0.06);
+  background-color: var(--clr-white);
+}
+
+.btn.btn-checkbox:active {
+  scale: 1;
+}
+
+.btn.btn-checkbox:hover,
+.btn-check:checked + .btn.btn-checkbox {
+  border-color: var(--clr-orange);
+}
+
+/* Radio Button CSS End */
+
+/* Tabing CSS Start */
+.nav {
+  padding: var(--space-md) var(--space-sm);
+  background-color: var(--clr-orange);
+  --bs-nav-link-padding-x: var(--space-md);
+  --bs-nav-link-padding-y: var(--space-md);
+  --bs-nav-link-font-weight: 500;
+  --bs-nav-link-color: var(--clr-white);
+  --bs-nav-link-hover-color: var(--clr-blue);
+  grid-gap: var(--space-sm);
+}
+
+.nav-pills {
+  --bs-nav-pills-border-radius: 0;
+  --bs-nav-pills-link-active-color: var(--clr-text-black);
+  --bs-nav-pills-link-active-bg: var(--clr-white);
+}
+
+.nav-pills .nav-link {
+  min-width: 14.4rem;
+}
+
+/* Tabing CSS End */
+
+/* Map Wrapper CSS Start */
+.map-wrapper {
+  position: relative;
+  max-width: 100%;
+  max-height: 320px;
+  min-height: 320px;
+  height: 100%;
+}
+
+.map-wrapper-layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.1)
+  );
+  top: 0;
+  left: 0;
+}
+
+.map-wrapper-content {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.map-wrapper-content::before {
+  content: "";
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.75 21H14.1131C14.892 20.3045 15.6266 19.5608 16.3125 18.7734C18.8859 15.8138 20.25 12.6938 20.25 9.75C20.25 7.56196 19.3808 5.46354 17.8336 3.91637C16.2865 2.36919 14.188 1.5 12 1.5C9.81196 1.5 7.71354 2.36919 6.16637 3.91637C4.61919 5.46354 3.75 7.56196 3.75 9.75C3.75 12.6938 5.11031 15.8138 7.6875 18.7734C8.37338 19.5608 9.10795 20.3045 9.88688 21H5.25C5.05109 21 4.86032 21.079 4.71967 21.2197C4.57902 21.3603 4.5 21.5511 4.5 21.75C4.5 21.9489 4.57902 22.1397 4.71967 22.2803C4.86032 22.421 5.05109 22.5 5.25 22.5H18.75C18.9489 22.5 19.1397 22.421 19.2803 22.2803C19.421 22.1397 19.5 21.9489 19.5 21.75C19.5 21.5511 19.421 21.3603 19.2803 21.2197C19.1397 21.079 18.9489 21 18.75 21ZM12 6.75C12.5933 6.75 13.1734 6.92595 13.6667 7.25559C14.1601 7.58524 14.5446 8.05377 14.7716 8.60195C14.9987 9.15013 15.0581 9.75333 14.9424 10.3353C14.8266 10.9172 14.5409 11.4518 14.1213 11.8713C13.7018 12.2909 13.1672 12.5766 12.5853 12.6924C12.0033 12.8081 11.4001 12.7487 10.8519 12.5216C10.3038 12.2946 9.83524 11.9101 9.50559 11.4167C9.17595 10.9234 9 10.3433 9 9.75C9 8.95435 9.31607 8.19129 9.87868 7.62868C10.4413 7.06607 11.2044 6.75 12 6.75Z' fill='%23FF7033'/%3E%3C/svg%3E%0A");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-color: var(--clr-white);
+  bottom: -50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 100%);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.map-wrapper-content p {
+  padding: var(--space-sm) calc(var(--space-lg) + 2px);
+  background-color: var(--clr-white);
+  line-height: 1.0875;
+  font-weight: 400;
+  box-shadow: 3px 4px 20px 0px #00000029;
+  border-radius: var(--space-xs);
+  position: relative;
+}
+
+.map-wrapper-content p::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 60%);
+  width: 16px;
+  height: 16px;
+  background-color: var(--clr-white);
+  clip-path: polygon(49% 100%, 0 0, 100% 0);
+}
+
+/* Map Wrapper CSS End */
+
+/* Main Cards CSS End */
+.main-cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50rem, 1fr));
+  grid-gap: var(--space-xl);
+}
+
+.card-wrapper {
+  padding: 4rem;
+  border: 1px solid #e6e6e6;
+  background-color: #fafafa;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  grid-gap: var(--space-md);
+}
+
+.card-top-wrapper {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  grid-gap: var(--space-xs);
+}
+
+.card-bootom-wrapper {
+  background-color: var(--clr-white);
+  padding: var(--space-2xl);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 4px 36px 0px #0000000f;
+  grid-gap: var(--space-2xl);
+}
+
+.card-img-wrapper {
+  /* max-width: 43.3rem; */
+  --bs-aspect-ratio: 72.25%;
+  object-fit: contain;
+}
+
+.card-img-wrapper.ratio > * {
+  left: 15%;
+}
+
+.card-bootom-details-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card-bootom-details-box {
+  padding: var(--space-md);
+}
+
+.card-bootom-details-box:nth-child(even) {
+  border-left: 1px solid var(--clr-line-gray);
+}
+
+.card-bootom-details-box:not(:nth-child(-n + 2)) {
+  border-top: 1px solid var(--clr-line-gray);
+}
+
+/* Main Cards Css Start */
+
+/* Title Css Start */
+.title {
+  font-size: var(--text-3xl);
+  font-weight: 600;
+  line-height: 1.1;
+  text-align: center;
+}
+
+/* Title Css End */
+
+/* Sub Hero Title Css Start */
+.sub-hero-wrapper {
+  background-image: linear-gradient(
+      0deg,
+      rgba(12, 27, 41, 0) 0%,
+      rgba(12, 27, 41, 0.62) 23.25%,
+      #0c1b29 105.6%
+    ),
+    var(--sub-hero-wrapper, url(../images/background/girl-drive-the-car.webp));
+  background-size: 1920px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 62rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sub-hero-title {
+  max-width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  grid-gap: var(--space-md);
+  color: var(--clr-white);
+}
+
+.sub-hero-title h2 {
+  font-size: var(--text-5xl);
+  text-transform: capitalize;
+  font-weight: 700;
+  line-height: 1.33;
+}
+
+.sub-hero-title p {
+  font-size: var(--text-lg);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+/* Sub Hero Title Css End */
+
+/* >> HEADER CSS << START */
+header {
+  z-index: 9;
+  transition: all 0.5s linear;
+}
+
+.header-container {
+  grid-template-columns: 1fr auto 1fr;
+  padding: var(--space-2xl);
+  height: var(--header-height);
+}
+
+.nav-list-link-wrapper {
+  grid-gap: 4rem;
+}
+
+.header-right-side {
+  z-index: 999;
+}
+
+/* Hamburger  Start */
+.hamburger {
+  width: 40px;
+  height: 40px;
+  padding: 5px;
+}
+
+.hamburger .line {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 6;
+  transition: stroke-dasharray 0.1s cubic-bezier(0.4, 0, 0.2, 1),
+    stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hamburger .line:first-child {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.hamburger .line:nth-child(2) {
+  stroke-dasharray: 60 60;
+  stroke-width: 6;
+}
+
+.hamburger .line:last-child {
+  stroke-dasharray: 60 207;
+  stroke-width: 6;
+}
+
+.navBarOpen .hamburger .line:first-child {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+.navBarOpen .hamburger .line:nth-child(2) {
+  stroke-dasharray: 1 60;
+  stroke-dashoffset: -30;
+  stroke-width: 6;
+}
+
+.navBarOpen .hamburger .line:last-child {
+  stroke-dasharray: 90 207;
+  stroke-dashoffset: -134;
+  stroke-width: 6;
+}
+
+/* Hamburger End */
+
+/* OffCanvas Start */
+.navBarOpen .offcanvas-backdrop {
+  display: block;
+}
+
+.offcanvas-backdrop {
+  display: none;
+}
+
+/* OffCanvas End */
+/* >> HEADER CSS << END */
+
+/* >> Footer CSS << END */
+.footer-logo-wrapper {
+  max-width: 33.3rem;
+}
+
+.footer-top-wrapper {
+  padding: 6.4rem 0;
+  grid-template-columns: 58rem auto;
+  grid-gap: 9.8rem;
+}
+
+.sub-footer {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: calc(var(--space-md) + 2px) 0;
+}
+
+.send-icon {
+  right: 16px;
+}
+
+.footer-email input {
+  padding: calc(var(--space-lg) + 2px) 44px calc(var(--space-lg) + 2px)
+    calc(var(--space-lg) + 2px);
+  color: var(--clr-white);
+}
+
+/* >> Footer CSS << END */
+
+/* >> Testimonal CSS << Start */
+.testimonal-card {
+  background-color: var(--clr-white);
+  padding: 3.2rem;
+  border: 1px solid #e6e6e6;
+}
+
+.testimonal-slider-wrapper {
+  max-width: 1246px;
+  background-image: linear-gradient(
+    0deg,
+    var(--clr-orange) 100%,
+    var(--clr-orange) 100%
+  );
+  background-size: 92.2rem 100%;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: calc(var(--space-xl) * 5) calc(var(--space-xl) * 4);
+  overflow: hidden;
+}
+
+.testimonal-slider-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 57.6rem;
+  height: 57.6rem;
+  opacity: 0.5;
+  transform: rotate(143.48deg);
+  background-image: linear-gradient(
+    135.88deg,
+    rgba(255, 255, 255, 0.4) 13.98%,
+    rgba(255, 255, 255, 0) 86.84%
+  );
+  border-radius: 50%;
+  bottom: 50%;
+  left: 0%;
+}
+
+.testimonal-card-img-wrapper {
+  max-width: 8rem;
+}
+
+.testimonal-card-img-wrapper img {
+  border-radius: 50%;
+}
+
+.testimonal-wapper-left {
+  grid-gap: 11.1rem;
+}
+
+/* >> Testimonal CSS << END */
+
+/* Input Start */
+.contact-input-label {
+  margin-bottom: var(--space-md);
+}
+
+.contact-input-label.disabled {
+  color: rgba(var(--clr-rgb-black), 0.2);
+}
+
+.contact-input {
+  display: block;
+  line-height: 1;
+  font-size: var(--text-md);
+  width: 100%;
+  border: 1px solid rgba(var(--clr-rgb-link), 0.3);
+  background-color: transparent;
+  outline: none;
+  height: 52px;
+  padding: 18px 18px 18px 44px;
+  transition: var(--transition-linear);
+}
+
+.contact-icon-card {
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-textarea {
+  display: block;
+  font-size: var(--text-md);
+  width: 100%;
+  border: 1px solid rgba(var(--clr-rgb-link), 0.3);
+  background-color: transparent;
+  outline: none;
+  height: 200px;
+  resize: none;
+  padding: 18px 18px 18px 44px;
+  transition: var(--transition-linear);
+}
+
+.contact-input:hover,
+.contact-input:focus,
+.contact-textarea:hover,
+.contact-textarea:focus {
+  border-color: var(--clr-orange);
+}
+
+.date-Input::placeholder {
+  color: var(--clr-text-black);
+}
+
+.contact-input.date-Input {
+  padding: 18px;
+}
+
+/* Input End */
+
+/* Range Slider Start */
+.range-slider-price-input {
+  margin: 0 0 3.5rem;
+}
+
+.range-slider-price-input .range-slider-field {
+  margin-top: 15px;
+  max-width: 55px;
+}
+
+.range-slider-field input {
+  outline: none;
+  border: 0;
+  -moz-appearance: textfield;
+  background-color: transparent;
+}
+
+.range-slider-wrapper input[type="ra"]::-webkit-outer-spin-button,
+.range-slider-wrapper input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.range-slider-separator {
+  padding: 0 12px;
+}
+
+.range-slider-wrapper .range-slider {
+  transition: var(--rovers-body-transition);
+  height: 4px;
+  background: #d9d9d9;
+  border-radius: 40px;
+}
+
+.range-slider .range-slider-progress-bar {
+  left: 25%;
+  right: 25%;
+  border-radius: 5px;
+  background: var(--clr-orange);
+}
+
+.range-silder-input input {
+  height: 5px;
+  top: -5px;
+  background: none;
+  pointer-events: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.range-slider-limit {
+  font-size: 14px;
+  color: black;
+}
+
+.range-slider-wrapper {
+  max-height: 40px;
+}
+
+.range-slider-wrapper
+  .range-silder-input
+  input[type="range"]::-webkit-slider-thumb {
+  height: 17px;
+  width: 17px;
+  border-radius: 50%;
+  background: var(--clr-orange);
+  pointer-events: auto;
+  -webkit-appearance: none;
+  box-shadow: 0 0 6px rgba(var(--rovers-rgb-black), 0.05);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+/* Range Slider End */
+
+/* Pagination CSS End   */
+.pagination {
+  --bs-pagination-bg: transparent;
+  --bs-pagination-border-color: var(--clr-line-gray);
+  --bs-pagination-font-size: var(--text-s);
+  --bs-pagination-hover-bg: unset;
+  --bs-pagination-hover-border-color: var(--clr-orange);
+  --bs-pagination-padding-x: 8px;
+  --bs-pagination-padding-y: 8px;
+  --bs-pagination-color: var(--clr-text-black);
+  --bs-pagination-hover-color: var(--clr-orange);
+}
+
+.page-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.page-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.page-link:focus {
+  box-shadow: unset;
+  color: var(--clr-white);
+  background: var(--clr-orange);
+}
+
+.page-link.active {
+  background: var(--clr-orange);
+  color: var(--clr-white);
+}
+
+.pagination .active > .page-link,
+.page-link.active {
+  border-color: transparent;
+  z-index: unset;
+}
+
+/* Pagination CSS End */
+
+/* Select Start */
+.form-select {
+  --bs-form-select-bg-img: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.0306 9.53104L12.5306 17.031C12.4609 17.1008 12.3782 17.1561 12.2871 17.1938C12.1961 17.2316 12.0985 17.251 11.9999 17.251C11.9014 17.251 11.8038 17.2316 11.7127 17.1938C11.6217 17.1561 11.539 17.1008 11.4693 17.031L3.9693 9.53104C3.82857 9.39031 3.74951 9.19944 3.74951 9.00042C3.74951 8.80139 3.82857 8.61052 3.9693 8.46979C4.11003 8.32906 4.30091 8.25 4.49993 8.25C4.69895 8.25 4.88982 8.32906 5.03055 8.46979L11.9999 15.4401L18.9693 8.46979C19.039 8.40011 19.1217 8.34483 19.2128 8.30712C19.3038 8.26941 19.4014 8.25 19.4999 8.25C19.5985 8.25 19.6961 8.26941 19.7871 8.30712C19.8781 8.34483 19.9609 8.40011 20.0306 8.46979C20.1002 8.53947 20.1555 8.6222 20.1932 8.71324C20.2309 8.80429 20.2503 8.90187 20.2503 9.00042C20.2503 9.09896 20.2309 9.19654 20.1932 9.28759C20.1555 9.37863 20.1002 9.46136 20.0306 9.53104Z' fill='%231A1919'/%3E%3C/svg%3E%0A");
+  --bs-border-color: var(--clr-line-gray);
+  padding: 15px 42px 15px 10px;
+  font-size: var(--text-md);
+  border-radius: 0;
+  height: 52px;
+  background-size: 3.2rem 2.4rem;
+  line-height: 1;
+}
+
+.form-select:disabled {
+  --bs-form-select-bg-img: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20.0306 9.53104L12.5306 17.031C12.4609 17.1008 12.3782 17.1561 12.2871 17.1938C12.1961 17.2316 12.0985 17.251 11.9999 17.251C11.9014 17.251 11.8038 17.2316 11.7127 17.1938C11.6217 17.1561 11.539 17.1008 11.4693 17.031L3.9693 9.53104C3.82857 9.39031 3.74951 9.19944 3.74951 9.00042C3.74951 8.80139 3.82857 8.61052 3.9693 8.46979C4.11003 8.32906 4.30091 8.25 4.49993 8.25C4.69895 8.25 4.88982 8.32906 5.03055 8.46979L11.9999 15.4401L18.9693 8.46979C19.039 8.40011 19.1217 8.34483 19.2128 8.30712C19.3038 8.26941 19.4014 8.25 19.4999 8.25C19.5985 8.25 19.6961 8.26941 19.7871 8.30712C19.8781 8.34483 19.9609 8.40011 20.0306 8.46979C20.1002 8.53947 20.1555 8.6222 20.1932 8.71324C20.2309 8.80429 20.2503 8.90187 20.2503 9.00042C20.2503 9.09896 20.2309 9.19654 20.1932 9.28759C20.1555 9.37863 20.1002 9.46136 20.0306 9.53104Z' fill='%23807e7d'/%3E%3C/svg%3E%0A");
+  background-color: transparent;
+  color: var(--clr-text-gray);
+}
+
+.form-select:focus,
+.form-select:hover {
+  border-color: var(--clr-orange);
+  box-shadow: unset;
+}
+
+.form-select:disabled:hover {
+  border-color: var(--clr-line-gray);
+}
+
+/* Search Car Truck Start */
+.search-car-truck-wrapper {
+  padding: 4rem;
+  box-shadow: 4px 10px 50px 0 rgba(var(--clr-rgb-black), 0.08);
+  max-width: 90%;
+  margin-top: -8%;
+}
+
+.search-car-truck-img-card {
+  --bs-aspect-ratio: 43%;
+}
+
+.search-input-wrapper {
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 3.2rem;
+}
+
+.search-radio-input-card .form-check:not(:last-child) {
+  border-right: 1px solid var(--clr-line-gray);
+  padding-right: 3.2rem;
+  margin-right: 3.2rem;
+}
+
+.search-top-card {
+  margin-bottom: 4.2rem;
+}
+
+/* Search Car Truck End */
+
+/* Swiper Button Styles Start */
+.swiper-button {
+  width: 52px;
+  height: 52px;
+  color: var(--clr-white);
+  border: 1px solid var(--clr-orange);
+  background-color: var(--clr-orange);
+}
+
+.swiper-button.swiper-button-disabled {
+  color: var(--clr-text-gray);
+  border-color: transparent;
+  background-color: var(--clr-line-gray);
+  cursor: not-allowed;
+}
+
+.car-detail-swiper-next-btn,
+.car-detail-swiper-prev-btn {
+  top: 50%;
+}
+
+.car-detail-swiper-next-btn {
+  left: -12px;
+}
+
+.car-detail-swiper-prev-btn {
+  right: -12px;
+}
+
+/* Swiper Button Styles End */
+
+/* Social Icons Style Start */
+.social-icons-wapper {
+  display: flex;
+  grid-gap: var(--space-md);
+}
+
+.social-icons {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: white;
+}
+
+.social-icons:hover {
+  color: var(--clr-orange);
+}
+
+/* Swiper Button Styles End */
+
+/* Social Icons Style Start */
+.social-icons-wapper {
+  display: flex;
+  grid-gap: var(--space-md);
+}
+
+.social-icons {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: white;
+}
+
+.social-icons:hover {
+  color: var(--clr-orange);
+}
+
+/* Social Icons Style End */

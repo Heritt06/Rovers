@@ -1,0 +1,16 @@
+/* Bootstrap Min CSS */
+@import "./bootstrap.min.css";
+/* Swiper Min CSS */
+@import "./swiper-bundle.min.css";
+/* Fonts CSS <= */
+@import "./fonts.css";
+/* Variable CSS */
+@import "./variable.css";
+/* Default CSS */
+@import "./default.css";
+/* Components CSS */
+@import "./components.css";
+/* Page CSS */
+@import "./page.css";
+/* Responsive CSS */
+@import "./responsive.css";

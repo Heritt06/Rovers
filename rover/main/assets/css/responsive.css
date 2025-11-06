@@ -1,0 +1,623 @@
+/* Min Width */
+@media (min-width: 1200px) {
+  :root {
+    --container-width: 1180px;
+  }
+
+  .vehicles-body-types-wrapper {
+    padding: 8.2rem 0 8.2rem calc(calc(100vw - var(--container-width)) / 2);
+  }
+}
+
+@media (min-width: 1350px) {
+  :root {
+    --container-width: 1280px;
+  }
+}
+
+@media (min-width: 1440px) {
+  :root {
+    --container-width: 1340px;
+  }
+}
+
+@media (min-width: 1600px) {
+  :root {
+    --container-width: 1470px;
+  }
+}
+
+@media (min-width: 1700px) {
+  :root {
+    --container-width: 1600px;
+  }
+}
+
+/* Max Width */
+@media (max-width: 1799px) {
+  :root {
+    /* Fonts Size */
+    --html: 9px;
+
+    /* Header Height */
+    --header-height: 90px;
+  }
+}
+
+@media (max-width: 1599px) {
+  :root {
+    /* Fonts Size */
+    --html: 8px;
+
+    /* Header Height */
+    --header-height: 80px;
+  }
+}
+
+@media (max-width: 1439px) {
+  :root {
+    /* Font Size */
+    --html: 7.5px;
+    --text-lg: 23px;
+    --text-md: 19px;
+    --text-s: 15px;
+
+    /* Spacing Size */
+    --space-2xl: 22px;
+    --space-xl: 18px;
+    --space-lg: 14px;
+    --space-md: 10px;
+  }
+}
+
+@media (max-width: 1365px) {
+  :root {
+    /* Font Size */
+    --html: 7px;
+    --text-lg: 22px;
+    --text-md: 18px;
+    --text-s: 14px;
+
+    /* Spacing */
+    --space-2xl: 20px;
+    --space-xl: 16px;
+    --space-lg: 12px;
+    --space-md: 8px;
+  }
+
+  .car-rental-icon-card {
+    width: 40px;
+    height: 40px;
+  }
+
+  .contact-input.date-Input {
+    padding: 8px 10px;
+  }
+
+  .search-input-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1279px) {
+  :root {
+    /* Fonts Size */
+    --html: 6.5px;
+    --text-lg: 19px;
+    --text-md: 15px;
+    --text-s: 13px;
+
+    /* Spacing Size */
+    --space-2xl: 19px;
+    --space-xl: 15px;
+    --space-lg: 11px;
+    --space-md: 7px;
+  }
+
+  .authentication-layout-wrapper {
+    grid-template-columns: 50% 50%;
+  }
+
+  .swiper-button {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 1199px) {
+  :root {
+    /* Fonts Size */
+    --html: 6px;
+    --text-lg: 18px;
+    --text-md: 14px;
+    --text-s: 12.5px;
+
+    /* Spacing Size */
+    --space-2xl: 18px;
+    --space-xl: 14px;
+    --space-lg: 10px;
+    --space-md: 6px;
+  }
+
+  .search-input-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .truck-rental-section .car-rental-services-card-wrapper {
+    grid-gap: 25px;
+  }
+
+  .icon-lg {
+    width: 25px;
+    height: 25px;
+  }
+
+  .swiper-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero-wrapper-top {
+    padding-bottom: calc(0rem + var(--header-height) * 1.3);
+  }
+
+  .vehicles-body-types {
+    grid-gap: 2rem;
+  }
+
+  .available-cars-wrapper-filter {
+    background-color: #fafafa;
+    transition: var(--transition-linear);
+    position: fixed;
+    left: 0;
+    top: var(--header-height);
+    transform: translateX(-101%);
+    padding: 20px;
+    height: calc(100vh - var(--header-height));
+    width: 50%;
+    overflow: auto;
+    z-index: 999;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  }
+
+  .available-cars-wrapper-filter.active {
+    transform: translateX(-0%);
+  }
+
+  .available-cars-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 991px) {
+  :root {
+    /* Fonts Size */
+    --html: 5.5px;
+    --text-lg: 17px;
+    --text-md: 13px;
+    --text-s: 12px;
+
+    /* Spacing Size */
+    --space-2xl: 16px;
+    --space-xl: 13px;
+    --space-lg: 9px;
+  }
+
+  /* Authentication Pages (Login && Sign Up) Start */
+  .authentication-layout-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .authentication-layout-right {
+    height: 100%;
+    overflow: unset;
+    padding: 5rem;
+  }
+
+  .authentication-layout-left {
+    min-height: unset;
+    padding: 4rem;
+  }
+
+  /* Authentication Pages (Login && Sign Up) End */
+  .your-journey-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .select-car-back-wrapper h2 {
+    font-size: 25rem;
+  }
+
+  /* Blog Page Start */
+  .blog-search-wrapper {
+    padding-top: 7rem;
+  }
+
+  .send-message-wrapper {
+    margin-bottom: 7rem;
+  }
+
+  .car-rental-img-card {
+    margin-top: 7rem;
+  }
+
+  .form-check-input {
+    width: 20px;
+    height: 20px;
+  }
+
+  .payment-gateway-wrapper {
+    padding-top: 7rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-input,
+  .form-select {
+    height: 45px;
+  }
+
+  .contact-input,
+  .contact-textarea {
+    padding: 10px 10px 10px 32px;
+  }
+
+  .contact-icon-card {
+    left: 8px;
+  }
+
+  .icon-md {
+    width: 20px;
+    height: 20px;
+  }
+
+  .select-payment-method-wrapper {
+    margin-top: 7rem;
+  }
+
+  .qr-code-scan-wrapper {
+    margin-top: 5rem;
+  }
+
+  .accepted-payment-method-wrap {
+    border-right: 0;
+    padding-right: 0;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid var(--clr-line-gray);
+  }
+
+  .accepted-payment-method-wrap::after {
+    right: unset;
+    bottom: -7px;
+    top: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 5px;
+  }
+
+  .footer-top-wrapper {
+    grid-template-columns: 38rem auto;
+  }
+
+  .hero-wrapper-bottom {
+    bottom: calc(5% + var(--header-height) * -1);
+  }
+
+  .about-us {
+    margin-top: 20rem;
+  }
+
+  .about-us-wrapper {
+    flex-direction: column;
+    border: 1px solid var(--clr-line-gray);
+  }
+
+  .about-us-wrapper-right {
+    max-width: 100%;
+    border: 0;
+  }
+
+  .testimonal-slider-wrapper {
+    background-size: 100%;
+  }
+
+  .vehicles-body-types-right,
+  .vehicles-body-types-left {
+    max-width: 50%;
+    justify-content: center;
+  }
+
+  .available-cars-right-title {
+    position: sticky;
+    top: var(--header-height);
+    background-color: var(--clr-white);
+    z-index: 8;
+  }
+
+  .available-cars-wrapper .main-cards-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .your-journey-img-wrapper {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    /* Fonts Size */
+    --html: 5px;
+    --text-lg: 15px;
+    --text-md: 12.5px;
+    --text-5xl: 5.5rem;
+
+    /* Spacing Size */
+    --space-2xl: 15px;
+    --space-xl: 12px;
+    --space-lg: 8px;
+  }
+
+  /* Header Componate */
+  .header-container {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .nav-list-link-wrapper {
+    position: fixed;
+    width: 65%;
+    height: 100%;
+    background-color: var(--clr-blue);
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    grid-gap: 8rem;
+    z-index: 999;
+    justify-content: center !important;
+    transform: translateX(100%);
+    transition: all 0.3s linear;
+  }
+
+  .navBarOpen .nav-list-link-wrapper {
+    transform: translateX(0);
+  }
+
+  /* Header Components */
+
+  .search-input-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .payment-gateway-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .about-car-feature-card {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .map-wrapper {
+    max-height: 250px;
+    min-height: 250px;
+  }
+
+  .swiper-button {
+    width: 35px;
+    height: 35px;
+  }
+
+  .car-image-swiper-wrapper {
+    padding: 0 10px;
+  }
+
+  .testimonal-wapper {
+    flex-direction: column;
+  }
+
+  .page-link {
+    width: 35px;
+    height: 35px;
+  }
+
+  .footer-top-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-wrapper-bottom {
+    bottom: calc(16% + var(--header-height) * -1);
+  }
+
+  .about-us {
+    margin-top: var(--section-spacing);
+  }
+
+  .testimonal-wapper-left {
+    grid-gap: 0;
+    width: 100%;
+  }
+
+  .testimonal-pagination-button {
+    position: absolute;
+    transform: translateY(-100%);
+  }
+
+  .testimonal-pagination-button.testimonal-prev {
+    left: 0;
+  }
+
+  .testimonal-pagination-button.testimonal-next {
+    right: 0;
+  }
+
+  .select-car-swiper-pagination-button {
+    bottom: 0;
+    top: unset;
+  }
+
+  .select-car-swiper-pagination-button.select-car-swiper-prev {
+    left: 0;
+    transform: translate(100%, -100%);
+  }
+
+  .select-car-swiper-pagination-button.SelectCarSwiper-next {
+    transform: translate(-100%, -100%);
+  }
+}
+
+@media (max-width: 575px) {
+  :root {
+    /* Fonts Size */
+    --text-lg: 13px;
+
+    /* Spacing Size */
+    --space-2xl: 12px;
+    --space-xl: 10px;
+  }
+
+  .select-car-back-wrapper h2 {
+    font-size: 18rem;
+  }
+
+  .testimonal-slider-wrapper {
+    background-size: 100%;
+  }
+
+  .contact-input-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-textarea-card {
+    grid-column-start: unset;
+    grid-column-end: unset;
+  }
+
+  .car-rental-services-card-wrapper {
+    grid-template-columns: 1fr;
+    grid-gap: 25px;
+  }
+
+  .car-rental-icon-card {
+    width: 30px;
+    height: 30px;
+  }
+
+  .search-input-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .car-booking-input-wrap {
+    gap: 2rem;
+  }
+
+  .car-booking-input-card {
+    width: 100%;
+  }
+
+  .car-booking-icon {
+    align-self: center;
+    transform: rotate(90deg);
+  }
+
+  .about-car-feature-card {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .icon-lg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .contact-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .car-tracking-icon-card {
+    width: 24px;
+    height: 24px;
+  }
+
+  .vehicles-body-types {
+    flex-direction: column;
+  }
+
+  .vehicles-body-types-right,
+  .vehicles-body-types-left {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .available-cars-wrapper-filter {
+    width: 100%;
+  }
+
+  .available-cars-wrapper .main-cards-wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .available-cars-right-wrapper-select {
+    max-width: 100%;
+  }
+
+  .your-journey-img-wrapper {
+    min-height: 42rem;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --section-spacing: 8rem;
+  }
+
+  .nav-list-link-wrapper {
+    width: 100%;
+  }
+
+  .blog-categories-card-wrapper,
+  .payment-method-types-wrap,
+  .car-address-details-card {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .swiper-button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .payment-type-card {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-top-wrapper-right {
+    max-width: 220px;
+    grid-gap: 5rem;
+  }
+
+  .footer-top-wrapper-right .vr {
+    display: none;
+  }
+
+  .sub-footer-content {
+    flex-direction: column;
+  }
+
+  .footer-top-wrapper {
+    grid-gap: 4rem;
+  }
+
+  .hero-wrapper-top {
+    padding-bottom: 0;
+  }
+
+  .testimonal-slider-wrapper {
+    padding: 5rem;
+  }
+}
+
+@media (max-width: 349px) {
+  .about-car-feature-card {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-wrapper-bottom {
+    bottom: calc(20% + var(--header-height) * -1);
+  }
+}

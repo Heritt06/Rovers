@@ -1,0 +1,17 @@
+{
+  "short_name": "Rover",
+  "name": "Rover",
+  "icons": [
+    {
+      "src": "./assets/images/favicons/android-chrome-48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    }
+  ],
+  "id": "/Home",
+  "start_url": "/",
+  "scope": "/",
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+}
